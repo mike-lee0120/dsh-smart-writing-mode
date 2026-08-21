@@ -2,14 +2,14 @@
 
 A DeepSeek Harness (DSH) agent preset — **Smart Writing Mode** — a professional assistant for fiction and screenwriting.
 
-It ships a "genre → structure → beats → benchmark" creative system and a long-form novel incremental-writing protocol, covering idea development, novels, film/TV/stage scripts, micro-dramas (short dramas), novel-to-screenplay adaptation, and revision.
+It ships a "genre → structure → beats → narrative style" creative system and a long-form novel incremental-writing protocol, covering idea development, novels, film/TV/stage scripts, micro-dramas (short dramas), novel-to-screenplay adaptation, and revision.
 
 > 中文版：[README.md](README.md)
 
 ## Features
 
 - **6 professional writing Skills**: idea development, novels, film scripts, micro-dramas, adaptation, and revision.
-- **Genre / structure / beats / benchmark system**: 8 short-drama core types, 8 standard film genres, a classic dramatic-structure library, the 120-minute 15-beat film sheet, the short-drama 10-beat sheet, and director-master style benchmarks.
+- **Genre / structure / beats / narrative-style system**: 8 short-drama core types, 8 standard film genres, a classic dramatic-structure library, the 120-minute 15-beat film sheet, the short-drama 10-beat sheet, and director-master style references (narrative-tone labels).
 - **Long-form support**: novels (e.g. 400k characters) are written via "incremental file output + per-chapter files + single-source-of-truth setting sheets", with the manuscript persisted to disk.
 - **Full tooling**: inherits `standard`'s file I/O, shell, background jobs, planning, subagents, workflows, and web research.
 - **Extensible**: add a skill, change the persona, or mount a custom tool by editing the corresponding file.
@@ -26,16 +26,16 @@ Example:
 
 > I want a comeback short drama: the heroine is humiliated at her engagement party, then awakens a miracle-doctor power and fights back.
 
-The assistant loads `short-drama-writing` and produces an episode outline (each episode with a hook) and script, following "pick type → 爽剧打脸 structure → 10 beats → benchmark director".
+The assistant loads `short-drama-writing` and produces an episode outline (each episode with a hook) and script, following "pick type → 爽剧打脸 structure → 10 beats → match narrative style".
 
 ## Creative pipeline
 
-> Pick type → pick structure → apply beats → benchmark style → outline/draft
+> Pick type → pick structure → apply beats → match narrative style → outline/draft
 
 - **Pick type**: choose from the 8 short-drama core types or 8 standard film genres.
 - **Pick structure**: choose from the classic dramatic-structure library.
 - **Apply beats**: the 15-beat sheet for film, the 10-beat sheet for short drama.
-- **Benchmark style**: match a director master by genre (with named creative-style labels).
+- **Match narrative style**: borrow a director's style label by genre (with named narrative-tone labels).
 
 ## Built-in Skills
 
@@ -43,8 +43,8 @@ The assistant loads `short-drama-writing` and produces an episode outline (each 
 |---|---|
 | `story-development` | Idea development & outline: logline, theme, world/characters, classic structure library, chapter/scene outline, project directory |
 | `novel-writing` | Novel writing: prose craft, genre playbooks, long-form incremental-writing protocol (per-chapter files + single-source-of-truth sheets) |
-| `screenplay-writing` | Film/TV/stage scripts: standard format, 8 film genres, 120-minute 15-beat sheet, film director benchmarks |
-| `short-drama-writing` | Micro-drama: 8 short-drama core types, type→structure mapping, 10-beat sheet, per-episode timing budget, short-drama director benchmarks |
+| `screenplay-writing` | Film/TV/stage scripts: standard format, 8 film genres, 120-minute 15-beat sheet, style references (narrative-tone labels) |
+| `short-drama-writing` | Micro-drama: 8 short-drama core types, type→structure mapping, 10-beat sheet, per-episode timing budget, style references (narrative-tone labels) |
 | `novel-to-screenplay` | Novel adaptation: extract / cut / restructure / transcribe to film (15 beats) or short drama (10 beats) |
 | `writing-revision` | Revision: layered proofreading, cross-chapter consistency, beat/hook audit, long-form global review |
 
@@ -53,7 +53,7 @@ The assistant loads `short-drama-writing` and produces an episode outline (each 
 - **Genres**: 8 short-drama core types (comeback / revenge / sweet romance / angsty romance / family melodrama / mystery / fantasy-power / realistic-era); 8 standard film genres (action / comedy / romance / mystery / thriller / sci-fi / crime / drama).
 - **Structures**: classic dramatic structure library (three-act, hero's journey, eight-step, Save the Cat, five-act, minimal hit, mystery triple-reversal, comeback face-slap).
 - **Beat sheets**: film 120-minute 15 beats; short-drama 10 beats + platform notes + per-episode timing budget.
-- **Benchmarks**: film director masters (Cameron / Nolan / Spielberg / Jiaozi, etc.); short-drama director masters (Gao Feng / Yang Huan / Wu Xingxing / Li Ran, etc.).
+- **Style references (narrative-tone labels)**: film director style labels (Cameron / Nolan / Spielberg / Jiaozi, etc.); short-drama director style labels (Gao Feng / Yang Huan / Wu Xingxing / Li Ran, etc.).
 
 ## Long-form support
 
@@ -108,4 +108,4 @@ Equivalently, copy this directory (excluding `.git` and README files) to `${DSH_
 
 ## Disclaimer
 
-This preset is a community work, not an official DeepSeek preset, and is neither affiliated with nor endorsed by DeepSeek. Director/revenue figures are user-supplied creative benchmarking references intended only as style anchors, not factual assertions.
+This preset is a community work, not an official DeepSeek preset, and is neither affiliated with nor endorsed by DeepSeek. Director style labels are user-supplied creative references intended only as narrative-style anchors, not factual assertions.
