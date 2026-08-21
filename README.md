@@ -4,7 +4,7 @@
 
 内置「类型 → 结构 → 节拍 → 叙事气质」创作体系与长篇小说增量创作协议，支持创意策划、小说、电影/电视剧/话剧剧本、微短剧、小说改编剧本与润色修订。
 
-> English version: [README.en.md](README.en.md)
+> English version: [README.en.md](README.en.md) · 使用手册：[USAGE.md](USAGE.md)
 
 ## 特性
 

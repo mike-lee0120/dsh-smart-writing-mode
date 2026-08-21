@@ -4,7 +4,7 @@ A DeepSeek Harness (DSH) agent preset — **Smart Writing Mode** — a professio
 
 It ships a "genre → structure → beats → narrative style" creative system and a long-form novel incremental-writing protocol, covering idea development, novels, film/TV/stage scripts, micro-dramas (short dramas), novel-to-screenplay adaptation, and revision.
 
-> 中文版：[README.md](README.md)
+> 中文版：[README.md](README.md) · Usage manual: [USAGE.en.md](USAGE.en.md)
 
 ## Features
 

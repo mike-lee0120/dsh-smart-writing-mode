@@ -14,6 +14,7 @@ rsync -a --delete \
   --exclude '.git' \
   --exclude 'install.sh' \
   --exclude 'README*.md' \
+  --exclude 'USAGE*.md' \
   "$SRC/" "$DEST/"
 
 # Owner-only, matching the roster's own `copy()` tightening.
